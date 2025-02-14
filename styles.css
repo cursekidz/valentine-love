@@ -1,0 +1,36 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f4e9dc;
+    color: #4a3f35;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 80vw;
+    max-width: 1000px;
+}
+.handwriting {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+}
+.kiss-mark {
+    width: 100px;
+    height: auto;
+}
+button {
+    background-color: #4a3f35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #6d5f50;
+}

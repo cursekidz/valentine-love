@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Question</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="question">
+        <p>Kamu mau ga jadi partner Valentine ku yang kali ini?</p>
+        <button onclick="yesAnswer()">Yes</button>
+        <button onclick="noAnswer()">No</button>
+    </div>
+
+    <script>
+        function yesAnswer() {
+            window.location.href = 'yes.html';
+        }
+        function noAnswer() {
+            alert('Kamu ga tega nolak aku? Padahal aku udah se-effort ini. Kamu ga berhak nolak sih.');
+        }
+    </script>
+</body>
+</html>
