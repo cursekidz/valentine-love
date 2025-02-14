@@ -3,21 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Gift</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Glowing Blue Lily</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .flower {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            animation: bloom 3s ease-in-out infinite alternate;
+        }
+        .petal {
+            position: absolute;
+            width: 60px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0.3));
+            border-radius: 50%;
+            transform-origin: bottom center;
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+        }
+        
+        .petal:nth-child(1) { transform: rotate(0deg) translateY(-20px); }
+        .petal:nth-child(2) { transform: rotate(72deg) translateY(-20px); }
+        .petal:nth-child(3) { transform: rotate(144deg) translateY(-20px); }
+        .petal:nth-child(4) { transform: rotate(216deg) translateY(-20px); }
+        .petal:nth-child(5) { transform: rotate(288deg) translateY(-20px); }
+        
+        @keyframes bloom {
+            from { transform: scale(0.5); opacity: 0.5; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <div class="notification">
-        <p>To: My lovely partner</p>
-        <p>From: Your beautiful partner</p>
-        <p>Halo! Kamu dapet hadiah spesial dari aku, maaf kalo agak berantakan ini baru pertama kali. Aku lebih enak ngungkapin rasa sayangku pake website kaya gini, bukan hadiah dalam bentuk fisik. Hope u enjoy ur valentine gift!</p>
-        <button onclick="nextPage()">Buka Surat</button>
+    <div class="flower">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
     </div>
-
-    <script>
-        function nextPage() {
-            window.location.href = 'letter.html';
-        }
-    </script>
 </body>
 </html>
